@@ -42,76 +42,103 @@
                 <form id="search-form">
                     <div>
                         <div class="input-group mb-3">
-                            <input autofocus type="text" class="form-control" placeholder="Enter city" aria-label="city"
+                            <input type="search" class="form-control" placeholder="Enter city" aria-label="city"
                                 aria-describedby="basic-addon2" id="city-input">
                 </form>
                 <form id="button-form">
                     <div class="input-group-append">
-                        <button type="button" class="btn btn-dark">Search</button>
-                        <button type="button" class="btn btn-light">Current</button>
+                        <button type="submit" class="btn btn-dark">Search</button>
+                        <button type="submit" class="btn btn-light">Current</button>
 
 
                     </div>
+                    <br>
+                </form>
+
+
             </div>
-            <br>
-            </form>
+            <div class="container">
+                <h1 id="city"> Zürich</h1>
+                <ul>
+                    <li> Last updated at<span id="date"></span>
+                        Sunday, 9:00
+                    </li>
+                    <li id="temperature-description">
+                        Cloudy
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
 
-            <h1> Zürich</h1>
-            <h2></h2>
-            <h2 id="temperature-description"></h2>
-            <h3 id="local-temp">
+            <div class="col-6">
+                <span class="d-flex weather-temperature">
 
-                <i class="fa-regular fa-moon"></i>
-                3ºC
-            </h3>
-            <div class="row">
-                <div class="col">
-                    Wed
-                    <br>
-                    <i class="fa-solid fa-cloud-showers-heavy"></i>
-                    <br>
-                    4º
-                </div>
-                <div class="col">
-                    Thu
-                    <br>
-                    <i class="fa-solid fa-cloud-sun"></i>
-                    <br>
-                    2º
-                </div>
-                <div class="col">
-                    Fri
-                    <br>
-                    <i class="fa-solid fa-cloud-sun-rain"></i>
-                    <br>
-                    5º
-                </div>
-                <div class="col">
-                    Sat
-                    <br>
-                    <i class="fa-solid fa-cloud-showers-heavy"></i>
-                    <br>
-                    4º
-                </div>
-                <div class="col">
-                    Sun
-                    <br>
-                    <i class="fa-solid fa-sun"></i>
-                    <br>
-                    1º
-                </div>
+                    <img src="http://openweathermap.org/img/wn/03d@2x.png" alt="cloudy" id="icon">
+                    <strong class="temp">3</strong>
+                    <span class="units"> ºC | <a href="#"></a>ºF</span>
+                </span>
             </div>
 
+            <div class="col-6">
+                <ul>
+                    <li>
+                        Precipitation: <span id="precipitation">%</span>%
+                    </li>
+                    <li>
+                        Humidity: <span id="humidity">%</span>
+                    </li>
+                    <li>
+                        Wind: <span id="wind">km/h</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                Wed
+                <br>
+                <i class="fa-solid fa-cloud-showers-heavy"></i>
+                <br>
+                4º
+            </div>
+            <div class="col">
+                Thu
+                <br>
+                <i class="fa-solid fa-cloud-sun"></i>
+                <br>
+                2º
+            </div>
+            <div class="col">
+                Fri
+                <br>
+                <i class="fa-solid fa-cloud-sun-rain"></i>
+                <br>
+                5º
+            </div>
+            <div class="col">
+                Sat
+                <br>
+                <i class="fa-solid fa-cloud-showers-heavy"></i>
+                <br>
+                4º
+            </div>
+            <div class="col">
+                Sun
+                <br>
+                <i class="fa-solid fa-sun"></i>
+                <br>
+                1º
+            </div>
         </div>
 
-    </div>
-
 
     </div>
-    <p>
-        <a href="https://github.com/stellawltr/weather-app-project.git" target="_blank">GitHub</a>
-    </p>
-    </div>
+
+    <script src="src/index.js"></script>
 </body>
+<h3>
+    GitHub
+</h3>
 
 </html>
